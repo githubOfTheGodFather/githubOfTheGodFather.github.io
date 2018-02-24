@@ -1,1 +1,30 @@
-<h1>123</h1>
+<style>
+			div{
+				margin: 0 auto;
+				text-align: center
+			}
+			#no{
+				position: absolute;
+				left: 750px;
+			}
+			#yes{
+				position: absolute;
+				left: 550px;
+			}
+</style>
+
+<div>
+		<h1>Hi,Aries,i'm wzh,do you love me ?</h1>
+		<input id="yes" type="button" value="YES" onclick="yes();"/>
+		<input id="no" type="button" value="N O" onmousemove="no();"/>
+</div>
+
+<script type="text/javascript">
+			function yes(){
+				alert("JavaScript Love You Too!");
+			}
+			function no(){
+				document.getElementById("no").style.left=Math.random()*1000+"px";
+				document.getElementById("no").style.top=Math.random()*600+"px";				
+			}
+</script>
